@@ -1,0 +1,238 @@
+.app-container {
+  background-image: url('Images/fondoDePantalla2.png');
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  min-height: 100vh;
+  
+  /* Para que la página ocupe al menos el alto de la ventana del navegador */
+}
+
+
+.content {
+
+  margin: 6rem 0rem 0rem 0rem;
+  flex: 1;
+  /* El contenido ocupará todo el espacio disponible */
+  display: flex;
+  
+  /* align-items: center; */
+  /* Puedes agregar estilos adicionales según necesites */
+}
+
+
+.bx.bx-calendar {
+  font-size: 3.5vh;
+  margin: 0.5vh 0.5vw 0vh 1.5vw;
+}
+
+
+/* ESTE ES EL CONTENEDOR DE LOS CALENDARIOS  */
+/* ESTE ES EL CONTENEDOR DE LOS CALENDARIOS  */
+/* ESTE ES EL CONTENEDOR DE LOS CALENDARIOS  */
+
+.contenedorFechasDetail {
+  height: 5vh;
+  margin: 0.5vh 7vw 0vh 8vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.calendarioInicioDetail {
+  width: 25vh;
+  height: 33px;
+  margin: 8px 0.5vw 0vh 0vw;
+  display: flex;
+  border-radius: 8px;
+  font-size: 2.1vh
+}
+
+.calendarioFinalizacionDetail {
+  width: 25vh;
+  height: 33px;
+  margin: 8px 0.3vw 0vh 0vw;
+  display: flex;
+  border-radius: 8px;
+}
+
+
+.botonBuscarFechaDetail {
+  width: 5vw;
+  height: 3.5vh;
+  border: 2px solid black;
+  /* Agregar borde negro de 2px */
+  border-radius: 10px;
+  margin: 0vh 0vw 0vh 0vw;
+  cursor: pointer;
+  background-color: #AC6ABA;
+  box-sizing: border-box;
+  color: #070000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  list-style: none;
+  outline: none;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.caracteristicas {
+  display: flex;
+  margin: 1vh 0vw 0vh 0vw;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.comparteRedes {
+  display: flex;
+  margin: 1vh 0vw 2vh 0vw;
+}
+
+/******************************************************************/
+/* Estilos de Calificacion Promedio */
+/******************************************************************/
+
+.cardBottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #AC6ABA;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 3px;
+  color: white;
+}
+
+/******************************************************************/
+/* FAVORITOS DENTRO DE DETAIL  */
+/******************************************************************/
+
+
+.contenedorFavorito {
+  display: inline-block;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  left: 10vw;
+  padding: 4px;
+
+}
+
+.bx-heart {
+  color: black;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.bx-heart:hover {
+  color: red;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.bx.bxs-heart {
+  color: red;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+
+
+/******************************************************************/
+/***********************************Pagina-administrador****************************************/
+/******************************************************************/
+.pageAdmin {
+  width: 100vw;
+  display: flex;
+  padding: 1rem;
+  flex-direction: column;
+  align-items: center;
+  /* background-image: url('/src/Images/24.jpg'); */
+}
+
+.panel {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  /* 
+  align-items: center;
+  justify-content: space-between;
+  max-width: 80vw;
+  max-height: 100vh; */
+}
+
+
+.contenidoAdmin {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+
+
+}
+
+.agregarProducto,
+.ListarProductos,
+.ListarCategorias,
+.actualizarProducto {
+  margin: 1rem;
+  width: 180px;
+  height: 30px;
+  background-color: #6269d3;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.agregarProducto:hover,
+.ListarProductos:hover,
+.ListarCategorias:hover,
+.actualizarProducto:hover {
+  color: rgba(0, 0, 0, 0.692);
+  width: 180px;
+  height: 28px;
+  ;
+  background-color: #FFFFFF;
+  box-shadow: 5px 5px 15px rgb(78, 77, 77);
+}
+
+
+.agregarProducto:active,
+.ListarProductos:active,
+.ListarCategorias:active,
+.actualizarProducto:active {
+  transform: scale(0.9);
+}
+
+
+
+
+
+
+@media(max-width:800px) {
+
+
+  /***********************************Pagina-administrador****************************************/
+
+  .pageAdmin {
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 414px) {
+  .bx.bx-calendar {
+    font-size: 2vh;
+    margin: 0.5vh 0.5vw 0vh 1.5vw;
+  }
+    
+}

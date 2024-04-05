@@ -1,0 +1,125 @@
+/******************************************************************/
+/* Estilos para las sugerencias del Autosuggest */
+/******************************************************************/
+.inputSearchBuscador {
+  width: 200px;
+  height: 33px;
+  text-align: center;
+  border:black;
+  font-size: 1vw;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: black;
+  display: inline-block;
+  font-size: 14.5px;
+  font-weight: 500;
+  line-height: 20px;
+  list-style: none;
+  outline: none;
+  position: relative;
+  text-align: left;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.react-autosuggest__suggestions-container {
+    position: absolute; 
+    z-index: 10;
+  }
+  
+  .react-autosuggest__suggestions-container--open {
+    display: block;
+    overflow-y: auto;
+    width: calc(100% - 20px);
+    max-width: 190px;
+    /* Ancho del contenedor (ajustar según sea necesario) */
+    max-height: 200px;
+    /* Altura máxima del contenedor (ajustar según sea necesario) */
+    overflow-y: auto;
+    /* Agregar barra de desplazamiento vertical si es necesario */
+    background-color: white;
+    /* Fondo blanco */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    
+  }
+  
+  .react-autosuggest__suggestions-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .react-autosuggest__suggestion {
+    padding: 10px;
+    cursor: pointer;
+    color: black;
+    /* Color de texto negro */
+  }
+  
+  .react-autosuggest__suggestion--highlighted {
+    background-color: #f0f0f0;
+  }
+
+
+  /* Estilos para los botones de paginación */
+
+.botonesPaginado{
+  width: 70vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+/* Estilo base para los botones */
+.botonesPaginado button {
+  padding: 0.5rem 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #007bff;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Estilo para el botón "Next" */
+.botonPaginadoAdelante {
+  margin-left: 0.5rem; /* Espacio entre los botones */
+}
+
+/* Estilo para el botón "Back" cuando está deshabilitado */
+.botonesPaginado button:disabled {
+  background-color: #6c757d;
+  border-color: #6c757d;
+  color: #fff;
+  cursor: not-allowed;
+}
+
+/* Estilo para el botón "Back" cuando está habilitado */
+.botonesPaginado button:not(:disabled):hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+  color: #fff;
+}
+
+.botonPaginadoNoMostrar{
+  display: none;
+}
+
+
+/*************************************************/
+
+  @media screen and (max-width: 414px) {
+
+    .inputSearchBuscador {
+      width: 345px;
+      margin: 5px;
+    }
+
+  }
